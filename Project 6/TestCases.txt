@@ -1,0 +1,179 @@
+prog print43 
+int k; 
+map[boolean, int] v; 
+map[string, map[boolean,int]] v2;
+map[int, map[string, map[boolean,int]]] m; 
+map [boolean, int] m1;
+map [boolean, int] m2; 
+m1 = {[true,43],[false,95]}; 
+v2["Yi"] = m1;
+m2 = {[false,0],[true,1]};
+v2["lin"] = m2;
+m[100] = v2; 
+println v2;
+do m : [k,v2] 
+    println k; 
+    boolean kb; 
+    int vi; 
+    string str;
+    do v2 : [str,v]
+        println str;
+        do v : [kb, vi]
+            print kb; 
+            print vi;println" ";
+        od;     
+    od; 
+od;
+
+gorp
+
+
+writing class print43.class
+{Yi={false=95, true=43}, lin={false=0, true=1}}
+100
+Yi
+false95 
+true43 
+lin
+false0 
+true1 
+
+===================================
+prog print43 
+int k; 
+map[int, string] m1; 
+map[int, map[string, boolean]] m2;
+map[string, boolean] m3;
+map[int,int] m5;
+int a;
+k = 100;
+m5[5] = 1;
+m5[8] = m5[5];
+a = m5[8];
+m5[9] = k;
+m1[1] = "one";
+m1[2] = "two";
+m1[3] = "false";
+m3 = {["true", true], ["false", false]};
+m2[1] = m3;
+println m2[0];
+println m2[1];
+println m2;
+println m3[m1[3]];
+println m1[m5[5]];
+println m5;
+println a;
+gorp
+
+
+
+writing class print43.class
+{}
+{true=true, false=false}
+{1={true=true, false=false}}
+false
+one
+{5=1, 8=1, 9=100}
+1
+
+================================================
+
+
+
+	"prog TestMapNeq1 " +
+    "int k; " +
+    "boolean b;" +
+    "map[int,int] m0; "+
+    "map[int,int] m1; " +
+    "map[int,int] m2; " +
+    "m0 = {[0,100],[3,10], [2,3]}; " +
+    "m1 = {[0,100],[2,102], [3,103]}; " +
+    "m2 = m0 * m1; " +
+    "print m0; "+
+    "print m1; " +
+    "print m2; " +
+    "print b; " +
+    "gorp";
+
+{0=100, 2=3, 3=10}{0=100, 2=102, 3=103}{0=100}false
+
+==========================================================
+
+prog selectsort 
+map[int, int] array;
+int i; int j;  
+int sizeofarr;
+i =0; j=0; 
+sizeofarr = 20;
+i = sizeofarr;
+do(i>=0) 
+    array[i] = j;
+    i = i -1;
+    j = j + 1;
+od;
+i = 0;
+println " ";
+print "[ ";
+do(i<=sizeofarr) 
+    print array[i];
+    print "  ";
+    i = i +1;
+od;
+print "]";
+i = 0; j=0;
+do (i < sizeofarr)
+    j = 0;
+    do ( j < sizeofarr)
+        if ( array[j] > array[j+1])
+            int tmp; 
+            tmp=0;
+            tmp = array[j];
+            array[j] = array[j+1]; 
+            array[j+1] = tmp;
+        fi;
+        j = j + 1;
+    od;
+    i = i + 1;
+od;
+i = 0;
+println " ";print "[ ";
+do(i<=sizeofarr) 
+    print array[i];
+    print "  ";
+    i = i + 1;
+od;
+print "]";
+gorp
+
+[ 20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  2  1  0  ] 
+[ 0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  ]
+
+=========================================================================
+prog selectsort 
+map[int, int] array;
+int i; int j;  
+int sizeofarr;
+i =0; j=0; 
+array[3] = 3;
+println array[4];
+gorp
+=========================================================================
+
+prog selectsort 
+map[int, int] a1;
+map [int,map[int,string]] a2;
+map [int,string] mi;
+a2[5] = {[1,"sam"],[2,"ram"]};
+println a2[5];
+gorp
+
+
+
+
+
+
+
+
+
+
+

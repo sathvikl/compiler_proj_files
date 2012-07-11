@@ -1,0 +1,118 @@
+prog test  string a; string b; a="Iam";b="lesley"; println a+b;gorp
+writing class test.class
+Iamlesley
+
+
+prog test boolean a;boolean b; a=true;b=true; println a&b;gorp
+writing class test.class
+true
+
+
+prog test boolean a;boolean b; a=true;b=false; println a&b;gorp
+writing class test.class
+false
+
+prog test boolean a;boolean b; a=true;b=false; println a|b;gorp
+writing class test.class
+true
+
+prog test  int a;boolean b;b = false;if(b)a=5;b=false;else a=6;b=true;fi;println a;println b;gorp
+writing class test.class
+6
+true
+
+prog test int a;int b;a=12;b=4; println a*b;println a-b;println a/b;gorp
+writing class test.class
+48
+8
+3
+
+prog test  int a;int c;c=10;boolean b;b = false;if(b)a=5;b=false;else a=c;b=true;fi;println a;println b;gorp
+writing class test.class
+10
+true
+
+prog test boolean a;boolean b; a=false;b=true; println !a;gorp
+writing class test.class
+true
+
+
+prog test  int a;int c;c=10;boolean b;b = false;if(b)a=5;b=false;else a=-c;b=true;fi;println a;println b;gorp
+writing class test.class
+-10
+true
+
+
+prog test boolean a;boolean b; a=false;b=true; if(a==b) println a;else println b;fi;gorp
+writing class test.class
+true
+
+
+prog test boolean a;boolean b; a=false;b=true; println a>b;println a<b;println a==b;gorp
+writing class test.class
+false
+true
+false
+
+prog test boolean a;boolean b; a=false;b=true; println a!=b;gorp
+writing class test.class
+true
+
+prog test int a;int b; a=5;b=10; println a>b;println a<b;println a==b;println a>=b;println a<=b;println a!=b;gorp
+writing class test.class
+false
+true
+false
+false
+true
+true
+
+
+
+prog test  int a;int c;c=10;boolean b;boolean d;b = true;d=true;if(b&d)a=5;b=false;else a=-c;b=!b;fi;println a;println b;gorp
+writing class test.class
+5
+false
+
+prog test string a;string b; a="les";b="lesley"; println a==b;println a!=b;println a<=b;gorp
+writing class test.class
+false
+true
+true
+
+
+prog test  int a;boolean b;b = true;do(a<10)a=a+1;b=false;od;println a;println b;gorp
+writing class test.class
+10
+false
+
+
+prog test  int a;boolean b;a=5;b = true;do(a<10)a=a+1;b=!b;println a;println b;od;gorp
+writing class test.class
+6
+false
+7
+true
+8
+false
+9
+true
+10
+false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

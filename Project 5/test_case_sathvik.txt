@@ -1,0 +1,149 @@
+prog print43 
+int a;
+boolean tbool;
+string str;
+print(54); 
+print "\n";
+print "sathvik\n";
+print true;
+a = 1;
+tbool = true;
+str = "hut";
+print a;
+print "\n";
+print str;
+print "\n";
+print tbool;
+gorp
+
+writing class print43.class
+54
+sathvik
+true1
+hut
+true
+
+prog print43 
+int a;
+int b;
+boolean tbool;
+string str;
+print "\n";
+a = 5;
+b = 2;
+tbool = true;
+str = "hut";
+a = -a + b;
+print a;
+print "\n";
+print str;
+print "\n";
+print tbool;
+if(false)
+    print "\nstatement true executed\n";
+else 
+    print "\nstate false executed\n";
+fi;
+int k;
+k = 1;
+do(tbool)
+    print "entered do loop\n";
+    print k;
+    k = k + 1;
+    tbool = false;
+od;
+print "\nEND of Prog\n";
+gorp
+
+writing class print43.class
+
+-3
+hut
+true
+state false executed
+entered do loop
+1
+END of Prog
+
+
+prog print43
+string result;
+boolean c;
+int i1;
+string str1;
+string str2;
+c = false;
+i1 = 300; 
+str1 = "starts";
+str2 = "startsWith ";
+result = str2 + !c;
+print "\ndisplaying the result: ";
+c = str1 <= str2;
+print result;
+println i1 + str1;
+println str1 + i1;
+print "\n";
+print c;
+print "\nEND of Prog\n";
+gorp
+
+writing class print43.class
+
+displaying the result: startsWith true
+300starts
+starts300
+true
+END of Prog
+
+prog Test1 
+int x; int y; boolean k;
+k = true; 
+x = 500;
+y = 1;
+if (y == 1) 
+    int x; string k;
+    k = "lin";
+    x = 1;  
+    do(x == 1) 
+        int k; 
+        k=8; 
+        x = 56;
+        y = 9; 
+        println k;
+        println x;    
+    od; 
+    println k;
+fi; 
+println k;
+if(true) 
+int j; 
+j=9; 
+println x;
+fi; 
+gorp
+
+writing class Test1.class
+8
+56
+lin
+true
+500
+
+prog print43 
+println true < false;
+println false < true;
+println true <= false;
+println false <= true;
+println 10 < 10;
+println 10 <= 10;
+println !true;
+gorp
+
+writing class print43.class
+false
+true
+false
+true
+false
+true
+false
